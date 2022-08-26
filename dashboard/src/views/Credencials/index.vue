@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'CredencialsView',
+
 };
 </script>
