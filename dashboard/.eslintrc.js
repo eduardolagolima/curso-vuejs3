@@ -18,6 +18,7 @@ module.exports = {
     'max-len': 'off',
     'vue/multi-word-component-names': 'off',
     'vuejs-accessibility/click-events-have-key-events': 'off',
+    'vuejs-accessibility/label-has-for': 'off',
   },
   overrides: [
     {
