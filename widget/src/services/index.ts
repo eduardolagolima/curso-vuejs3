@@ -1,7 +1,8 @@
 import axios from 'axios';
+import FeedbacksService from './feedbacks';
 
 const API_ENVS = {
-  production: 'https://backend-treinamento-vue3.vercel.app/',
+  production: 'https://backend-treinamento-vue3.vercel.app',
   development: '',
   local: 'http://localhost:3000',
 };
@@ -21,4 +22,6 @@ httpClient.interceptors.response.use((response) => response, (error) => {
   return error;
 });
 
-export default {};
+export default {
+  feedbacks: FeedbacksService(httpClient),
+};
